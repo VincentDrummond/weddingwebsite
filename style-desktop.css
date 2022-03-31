@@ -108,6 +108,11 @@ p {
   flex-direction: row;
 }
 
+.paypalbutton {
+  margin-top: 20px;
+  width: 150px;
+}
+
 .paragraphHeadline {
   font-size: 2.4rem;
   font-family: 'Playfair Display', serif;
