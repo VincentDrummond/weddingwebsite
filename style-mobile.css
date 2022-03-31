@@ -1,0 +1,203 @@
+:root {
+  --wf-red: rgb(91, 22, 11);
+  --wf-grey: rgb(250, 235, 215);
+  --wf-white1: rgb(253, 246, 237);
+  --wf-brown: rgb(36, 34, 35);
+
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "DIN Condensed", Helvetica, Arial, sans-serif;
+}
+
+.homepage-section,
+.ceremony-section,
+.reception-section,
+.gift-section,
+.info-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--wf-brown);
+  text-align: left;
+  font-size: 2rem;
+}
+
+
+.homepage-section article,
+.ceremony-section article,
+.reception-section article,
+.gift-section article,
+.info-section article {
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgba(250, 235, 215, 0.9);
+  width: 250px;
+  height: 600px;
+  letter-spacing: 0.1px;
+}
+
+.info-section article {
+  overflow: scroll;
+
+}
+
+body {
+  background-image: url(./wedding_images/wedding-invite-background-WEB-PHONE.webp);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 20%;
+  background-position-y: 0;
+}
+
+span {
+  display: block;
+  font-size: 6rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--wf-red);
+  text-align: left;
+  line-height: 58px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--wf-red);
+}
+
+.weddingDate {
+  font-size: 2.6rem;
+  color: rgba(36, 34, 35, 0.6);
+}
+
+main {
+  color: var(--wf-red);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 26px;
+  max-width: 400px;
+}
+
+.paragraphHeadline {
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--wf-red);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  border-top: var(--wf-red) 7px solid;
+}
+
+.paragraphHeadlineWedding {
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+  color: rgba(36, 34, 35, 0.6);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  border-top: var(--wf-red) 7px solid;
+}
+
+.pleaseNote {
+  color:var(--wf-red);
+}
+
+button {
+  width: 150px;
+  height: 70px;
+  margin: 20px 0px 20px 0px;
+  border: var(--wf-red) solid 6px;
+  border-radius: 20px;
+  background-color: rgba(170, 170, 157, 0.8);
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--wf-red);
+}
+
+.phonecall {
+  width: 60px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  border: var(--wf-red) solid 3px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  color: var(--wf-red);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  border-top: var(--wf-red) 7px solid;
+  color: var(--wf-red);
+  background-color: rgba(170, 170, 157, 0.95);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+
+.toggleswitch {
+  color: var(--wf-red);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 0px 20px;
+}
+
+li {
+  list-style: none;
+  padding: 0px 10px;
+  font-size: 2rem;
+  margin: 10px 0px 10px 0px;
+  color: var(--wf-brown);
+}
+
+.toggleswitch {
+  font-size: 2rem;
+}
+
+section > article {
+  display: none; /* this hides the content on each article */
+}
+
+section > input[type="radio"]:checked + article {
+  display: block; /* this shows the content on each article when the checkbox is selected */
+}
+
+footer > nav {
+  height: 0;
+  transition: height 300ms;
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+
+footer > input[type="checkbox"]:checked + nav {
+  height: 250px;
+  /* visibility: visible; */
+  /* opacity: 100;
+  transition: opacity 3s ease; */
+}

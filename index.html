@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent & Ellena</title>
+
+    <link rel="stylesheet"
+          href="style-mobile.css" />
+    <link rel="stylesheet"
+          href="style-desktop.css"
+          media="screen and (min-width:570px)"/>
+
+    
+<!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <section class="homepage-section">
+        <input id="homepage" type="radio" name="nav-bar" hidden />
+        <article>
+          <p class="paragraphHeadlineWedding">The Wedding of</p>
+            <p>
+              <span>Vincent</span>
+              <span>& Ellena</span>
+            </p>
+
+            <p>
+              <span class="weddingDate">1st October 2022</span>
+            </p>
+
+          </p>
+        </article>
+      </section>
+
+      <section class="ceremony-section">
+        <input id="ceremony" type="radio" name="nav-bar" hidden />
+        <article>
+          <p class="paragraphHeadline">The Ceremony</p>
+          <p>
+            This will take place at Stamford Registry Office, and will begin at
+            4pm. Please ensure that you arrive at least 15 minutes before this
+            to take your seat.
+          </p>
+
+          <p>
+            Anyone arriving after the ceremony has begun will not be able to
+            enter.
+          </p>
+        </article>
+      </section>
+
+      <section class="reception-section">
+        <input id="reception" type="radio" name="nav-bar" hidden />
+        <article>
+          <p class="paragraphHeadline">The Reception</p>
+          <p>
+            After the ceremony we will make our way to All Saints Bar for approximately 5pm. We have exclusive use of the upper room until 12 midnight. There is a
+            bar downstairs serving cocktails, bottled beers, wine, and spirits.
+            They accept both cash and card. A small buffet will be provided.
+          </p>
+
+          <p class="pleaseNote">
+            All Saints is a bar. Therefore, no one under the age of 18
+            will be allowed on the premises. We cannot make exceptions to this as it is the policy of the venue.
+          </p>
+
+          <p class="pleaseNote">
+            Due to the limited capacity of All Saints, only those people named on the invites will be able to attend. We politely ask that you do not bring any plus ones.
+          </p>
+        </article>
+      </section>
+
+      <section class="gift-section">
+        <input id="gifts" type="radio" name="nav-bar" hidden />
+        <article>
+          <p class="paragraphHeadline">The Gifts</p>
+          <p>
+            We do not have a wedding registry, because after 10 years together,
+            we have everything we need.
+          </p>
+          <p>
+            However, if you would like to give us a present, then gifts of cash
+            would be gratefully appreciated. We will use these to help pay for our 
+            honeymoon or our house renovations.
+          </p>
+
+          <p>
+            Please donate by clicking the button below. Alternatively we will
+            have a post box at the reception.
+          </p>
+
+          <button class="donate">Donate</button>
+        </article>
+      </section>
+
+      <section class="info-section">
+        <input id="info" type="radio" name="nav-bar" hidden />
+        <article>
+                  <p class="paragraphHeadline">The Ceremony  |  4pm</p>
+                  <p>
+                    Stamford Registry Office, 33 Ryhall Road, Stamford, Lincolnshire PE9
+                    1UF. There is on-site carparking.</p>
+
+                  <p class="paragraphHeadline">The Reception  |  5pm</p>
+                  <p>All Saints Bar, 12 All Saints' St, Stamford PE9 2AB</p>
+
+                  <p>
+                    The nearest ATM is opposite All Saints Bar, across Red Lion Square
+                    at HSBC.
+                  </p>
+
+                  <p>
+                    There is very limited on-street carparking outside All Saints Bar.
+                    The nearest carpark is a minute walk away on Broad Street PE9 1PF.
+                  </p>
+
+                  <p class="paragraphHeadline">Taxi Companies</p>
+            <div class="taxiContainer">
+              <div class="taxiLeft">
+                  <p>ABC Stamford</p>
+                  <a href="tel:01780252525"><button class="phonecall">Call</button></a>
+              </div>
+              <div class="taxiRight">
+                  <p>Skyline Taxis</p>
+                  <a href="tel:01780250250"><button class="phonecall">Call</button></a>
+              </div>
+            </div>
+
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <label class="toggleswitch" for="menu-toggle"> MENU </label>
+      <input id="menu-toggle" type="checkbox" hidden />
+
+      <nav>
+        <ul>
+          <li>
+            <label for="homepage">Home</label>
+          </li>
+
+          <li>
+            <label for="ceremony">Ceremony</label>
+          </li>
+
+          <li>
+            <label for="reception">Reception</label>
+          </li>
+
+          <li>
+            <label for="gifts">Gifts</label>
+          </li>
+
+          <li>
+            <label for="info">Information</label>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
