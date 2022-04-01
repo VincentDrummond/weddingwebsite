@@ -1,4 +1,9 @@
-:root {
+@font-face {
+  font-family: "DIN Condensed";
+  src: url("./wedding_fonts/DINCondensed-Bold.ttf") format("ttf");
+}
+  
+  :root {
   --wf-red: rgb(91, 22, 11);
   --wf-grey: rgb(250, 235, 215);
   --wf-white1: rgb(253, 246, 237);
