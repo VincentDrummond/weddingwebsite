@@ -12,6 +12,8 @@
           href="style-desktop.css"
           media="screen and (min-width:570px)"/>
 
+    <script src="index.js"></script>
+
     
 <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +28,7 @@
 
     <main>
       <section class="homepage-section">
-        <input id="homepage" type="radio" name="nav-bar" hidden />
+        <input id="homepage" type="radio" name="nav-bar" hidden checked />
         <article>
           <p class="paragraphHeadlineWedding">The Wedding of</p>
             <p>
@@ -100,10 +102,7 @@
           <p class="paragraphHeadline">The Gifts</p>
           <p>
             We do not have a wedding registry, because after 10 years together,
-            we have everything we need.
-          </p>
-          <p>
-            However, if you would like to give us a present, then gifts of cash
+            we have everything we need. However, if you would like to give us a present, then gifts of cash
             would be gratefully appreciated. We will use these to help pay for our 
             honeymoon or our house renovations.
           </p>
@@ -163,7 +162,7 @@
       <label class="toggleswitch" for="menu-toggle"> MENU </label>
       <input id="menu-toggle" type="checkbox" hidden />
 
-      <nav>
+      <nav id="navmenu">
         <ul>
           <li>
             <label for="homepage">Home</label>
@@ -174,7 +173,7 @@
           </li>
 
           <li>
-            <label for="reception">Reception</label>
+            <label id="menuItemReception" for="reception">Reception</label>
           </li>
 
           <li>
