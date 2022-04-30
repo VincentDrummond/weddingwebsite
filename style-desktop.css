@@ -1,14 +1,8 @@
-@font-face {
-  font-family: "DIN Condensed";
-  src: url("./wedding_fonts/DINCondensed-Bold.ttf");
-}
-
 :root {
   --wf-red: rgb(91, 22, 11);
   --wf-grey: rgb(170, 170, 157);
   --wf-white1: rgb(253, 246, 237);
   --wf-brown: rgb(36, 34, 35);
-
   font-size: 10px;
 }
 
@@ -21,7 +15,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 10px;
+
 }
 
 .homepage-section,
@@ -38,7 +32,7 @@ html {
   align-items: center;
   color: var(--wf-brown);
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 
@@ -53,7 +47,6 @@ html {
   background-color: rgba(170, 170, 157, 0.8);
   height: 600px;
   width: 400px;
-  letter-spacing: 0.1px;
   overflow: scroll;
 }
 
@@ -74,7 +67,7 @@ body {
   background-position-x: 20%;
   background-position-y: 0;
 
-  font-family: "DIN Condensed", Helvetica, Arial, sans-serif;
+  font-family: 'Akshar', Helvetica, sans-serif;
 }
 
 span {
@@ -86,10 +79,7 @@ span {
   line-height: 58px;
 }
 
-.weddingDate {
-  font-size: 2.6rem;
-  color: rgba(36, 34, 35, 0.6);
-}
+
 
 a {
   text-decoration: none;
@@ -106,7 +96,7 @@ main {
 
 p {
   margin-top: 10px;
-  line-height: 26px;
+  line-height: 24px;
   max-width: 400px;
 }
 
@@ -128,6 +118,11 @@ p {
   margin-bottom: 10px;
   margin-top: 40px;
   border-top: var(--wf-red) 7px solid;
+}
+
+.weddingDate {
+  font-size: 2.6rem;
+  color: rgba(36, 34, 35, 0.6);
 }
 
 .paragraphHeadlineWedding {
