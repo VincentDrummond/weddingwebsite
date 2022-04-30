@@ -48,6 +48,7 @@ html {
   height: 600px;
   width: 400px;
   overflow: scroll;
+  border: 7px var(--wf-red) solid;
 }
 
 
@@ -105,9 +106,10 @@ p {
   flex-direction: row;
 }
 
-.paypalbutton {
+.donateButton {
   margin-top: 20px;
-  width: 150px;
+  width: 120px;
+  height: 50px;
 }
 
 .paragraphHeadline {
@@ -139,7 +141,6 @@ p {
   color:var(--wf-red);
 }
 
-button.donate,
 button.rsvp {
   width: 140px;
   height: 70px;
@@ -154,7 +155,6 @@ button.rsvp {
   margin-right: 20px;
 }
 
-button.donate:hover,
 button.rsvp:hover {
   scale: 103%;
   box-shadow: 0px 0px 3px 3px;
@@ -177,16 +177,16 @@ button.phonecall:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   border-top: var(--wf-red) 7px solid;
   color: var(--wf-red);
   background-color: rgba(170, 170, 157, 0.8);
   width: 100%;
-  height: 70px;
-  padding: 2px 0px 10px 0px;
+  height: 90px;
 }
+
 
 ul {
   display: flex;

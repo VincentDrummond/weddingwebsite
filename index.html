@@ -63,14 +63,9 @@
           </p>
 
           <p class="pleaseNote">
-            We politely request that no confetti, rice or similar is thrown after the ceremony.
+            We politely request that no confetti, rice, or similar is thrown after the ceremony.
           </p>
-        </article>
-      </section>
 
-      <section class="reception-section">
-        <input id="reception" type="radio" name="nav-bar" hidden />
-        <article>
           <p class="paragraphHeadline">The Reception</p>
           <p>
             After the ceremony we will make our way to All Saints Bar for approximately 5pm. We have exclusive use of the upper room until 12 midnight. There is a
@@ -100,13 +95,7 @@
             <a href="https://wa.me/447884365905"><button class="rsvp">Whatsapp</button></a>
             <a href="mailto:vincentandellena@hotmail.com"><button class="rsvp">Email</button></a>
 
-        </article>
-      </section>
-
-      <section class="gift-section">
-        <input id="gifts" type="radio" name="nav-bar" hidden />
-        <article>
-          <p class="paragraphHeadline">The Gifts</p>
+          <p class="paragraphHeadline">Gifts</p>
           <p>
             We do not have a wedding registry, because after 10 years together,
             we have everything we need. However, if you would like to give us a present, then gifts of cash
@@ -116,14 +105,16 @@
 
           <p>
             Please donate by clicking the button below. Alternatively we will
-            have a post box at the reception.
+            have a donation box at the reception.
           </p>
 
           <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="E5YTBLYA2V9K6" />
-            <input type="image" class="paypalbutton" src="https://pics.paypal.com/00/s/MTQ4ZWU0OTYtMDljYi00MTQwLTk1YjUtZGMwYjhhMmQzNmY5/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif"/>
+            <input type="hidden" name="hosted_button_id" value="5FEN84F8X2SWW" />
+            <input class="donateButton" type="image" src="https://pics.paypal.com/00/s/NjZlYWE3NjMtMGFjNy00MzI2LWI4ZTktNTgxNWY1NmVmNjBj/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
             </form>
+            
+            
             
         </article>
       </section>
@@ -166,34 +157,27 @@
     </main>
 
     <footer>
-      <label class="toggleswitch" for="menu-toggle"> MENU </label>
-      <input id="menu-toggle" type="checkbox" hidden />
-
-      <nav id="navmenu">
-        <ul>
-          <li>
+      <nav class="nav-menu">
+          <div class="menu-left">
+            <li> 
             <label for="homepage">Home</label>
-          </li>
+            </li>
 
-          <li>
-            <label for="ceremony">Ceremony</label>
-          </li>
+            <li>
+              <label for="ceremony">The Wedding</label>
+            </li>
+          </div>
 
-          <li>
-            <label id="menuItemReception" for="reception">Reception</label>
-          </li>
+          <div class="menu-right">
+            <li>
+              <label for="rsvp">RSVP & Gifts</label>
+            </li>
 
-          <li>
-            <label for="rsvp">RSVP</label>
-          </li>
+            <li>
+              <label for="info">Information</label>
+            </li>
+          </div>
 
-          <li>
-            <label for="gifts">Gifts</label>
-          </li>
-
-          <li>
-            <label for="info">Information</label>
-          </li>
         </ul>
       </nav>
     </footer>

@@ -1,7 +1,11 @@
 
-function closeMenu() {
-        document.getElementById('menu-toggle').checkbox.checked = false;
-    }
+// function closeMenu() {
+//     let closer = document.getElementById('nav-menu');
 
-    let clickHere = document.getElementById('menuItemReception');
-    clickHere.addEventListener('click', closeMenu());
+//     if (closer.style.display === "none") {
+//         closer.style.display = 'block';
+//     } else {
+//         closer.style.display = 'none';
+//     };
+
+// };
