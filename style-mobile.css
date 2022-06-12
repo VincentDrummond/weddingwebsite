@@ -23,7 +23,8 @@ html {
 .reception-section,
 .gift-section,
 .rsvp-section,
-.info-section {
+.info-section,
+.other-section {
   width: 100%;
   height: 100%;
   display: flex;
@@ -41,19 +42,45 @@ html {
 .reception-section article,
 .gift-section article,
 .rsvp-section article,
+.other-section article {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(170, 170, 157, 0.8);
+  width: 80%;
+  height: 90vh;
+  /* border-left: 7px var(--wf-red) solid;
+  border-right: 7px var(--wf-red) solid; */
+  border: 7px var(--wf-red) solid;
+  overflow: auto;
+}
+
 .info-section article {
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: rgba(170, 170, 157, 0.8);
-  width: 300px;
-  height: 440px;
-  overflow: scroll;
+  width: 80%;
+  height: 100vh;
+  /* border-left: 7px var(--wf-red) solid;
+  border-right: 7px var(--wf-red) solid; */
   border: 7px var(--wf-red) solid;
+  overflow: auto;
+}
+
+.back {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--wf-red);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  border-top: var(--wf-red) 7px solid;
 }
 
 body {
   background-image: url(./wedding_images/wedding-invite-background-WEB-PHONE.webp);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: auto;
   background-position-x: 20%;
   background-position-y: 0;
@@ -74,6 +101,66 @@ a {
   text-decoration: none;
   color: var(--wf-red);
 }
+
+/* .navlist {
+  position: fixed;
+  bottom: 0;
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(170, 170, 157, 1);
+  width: 80%;
+  border-left: 7px var(--wf-red) solid;
+  border-right: 7px var(--wf-red) solid;
+}
+*/
+
+/*
+//**************** LINKS TOGGLE *****************
+.links {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.openButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  font-size: 4rem;
+}
+
+.openButton:hover {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  font-size: 1.7rem;
+  margin-top: 15px;
+  color: var(--wf-brown);
+  text-align: center;
+}
+
+.hidelinks {
+  display: none;
+}
+*/
+
+/* ********************************* */
 
 .weddingDate {
   font-size: 2.8rem;
@@ -118,7 +205,7 @@ p {
   color:var(--wf-red);
 }
 
-button {
+/* button {
   width: 120px;
   height:50px;
   margin: 20px 0px 10px 0px;
@@ -128,7 +215,7 @@ button {
   font-size: 1.5rem;
   font-family: 'Playfair Display', serif;
   color: var(--wf-red);
-}
+} */
 
 .donateButton {
   margin-top: 20px;
@@ -136,7 +223,7 @@ button {
   height: 50px;
 }
 
-.phonecall {
+/* .phonecall {
   width: 60px;
   height: 40px;
   margin: 10px 0px 20px 0px;
@@ -144,54 +231,16 @@ button {
   border-radius: 6px;
   font-size: 1.5rem;
   color: var(--wf-red);
-}
+} */
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  border-top: var(--wf-red) 7px solid;
-  color: var(--wf-red);
-  background-color: rgba(170, 170, 157, 1);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 90px;
-  padding: 10px 0px 10px 0px;
-}
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 
-}
-
+/* 
 .menu-right,
 .menu-left {
   margin: 0px 20px 0px 20px;
-}
+} */
 
-li {
-  list-style: none;
-  padding: 0px 10px;
-  font-size: 1.7rem;
-  margin: 15px 0px 20px 0px;
-  color: var(--wf-brown);
-}
 
-section > article {
-  display: none; /* this hides the content on each article */
-}
 
-section > input[type="radio"]:checked + article {
-  display: block; /* this shows the content on each article when the checkbox is selected */
-}

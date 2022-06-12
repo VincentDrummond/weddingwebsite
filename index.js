@@ -1,11 +1,8 @@
 
-// function closeMenu() {
-//     let closer = document.getElementById('nav-menu');
+// const openLinks = document.querySelector('.openButton');
+// const closer = document.querySelector('.links');
 
-//     if (closer.style.display === "none") {
-//         closer.style.display = 'block';
-//     } else {
-//         closer.style.display = 'none';
-//     };
+// openLinks.addEventListener('click', function(){
+//     closer.classList.toggle('hidelinks');
+// });
 
-// };
